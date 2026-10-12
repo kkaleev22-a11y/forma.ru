@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Современные проекты загородных домов. Подбор проекта, расчёт стоимости и консультация.">
+  <title>FORMA — дома, в которых хочется жить</title>
+  <style>
+    :root{color-scheme:dark;--ink:#f2f3f0;--muted:#a7ada5;--cream:#202220;--white:#292c29;--green:#a9c49b;--green-dark:#151815;--line:#3b403b;--orange:#e5a078;--radius:22px;--shadow:0 16px 44px #0005}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;transition:background .25s,color .25s}body.light-theme{color-scheme:light;--ink:#20231f;--muted:#70766d;--cream:#f5f4ef;--white:#fff;--green:#526b4b;--green-dark:#344934;--line:#e1e3dc;--orange:#d77d4d;--shadow:0 16px 44px #20231f12}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}.container{width:min(1180px,calc(100% - 40px));margin:auto}.topline{background:var(--green-dark);color:#fff;font-size:12px;padding:8px 0}.topline .container{display:flex;justify-content:space-between;gap:16px;align-items:center}.topline a{opacity:.9}.header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--cream) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:26px;font-weight:900;letter-spacing:2px;display:flex;align-items:center;gap:9px}.logo-mark{width:30px;height:30px;background:var(--green);color:white;border-radius:9px;display:grid;place-items:center;font-size:17px}.navlinks{display:flex;gap:24px;align-items:center;font-size:13px;font-weight:650}.navlinks a:hover,.footer a:hover{color:var(--orange)}.navright{display:flex;align-items:center;gap:12px}.phone{font-size:13px;font-weight:750;white-space:nowrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:14px 21px;background:var(--green);color:#fff;font-weight:750;font-size:13px;cursor:pointer;transition:.2s}.btn:hover{background:var(--green-dark);transform:translateY(-1px)}.btn.light{background:#fff;color:var(--ink)}.btn.outline{background:transparent;border:1px solid #fff8;color:white}.icon-btn{display:none;border:0;background:transparent;color:var(--ink);font-size:25px;cursor:pointer}.theme-toggle{border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:999px;width:42px;height:42px;display:grid;place-items:center;cursor:pointer;font-size:17px;flex-shrink:0}.theme-toggle:hover{border-color:var(--green)}.hero{padding:38px 0 68px}.hero-grid{display:grid;grid-template-columns:1fr 1.03fr;gap:46px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:1.7px;font-size:11px;font-weight:800;color:var(--green);margin-bottom:18px}.eyebrow:before{content:"";width:25px;height:2px;background:var(--orange)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,5.4vw,70px);line-height:1.03;letter-spacing:-2.8px;margin-bottom:22px;font-weight:850}h1 em{font-style:normal;color:var(--green)}.hero-copy{font-size:17px;color:var(--muted);max-width:500px;margin-bottom:28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{display:flex;align-items:center;gap:12px;margin-top:32px;color:var(--muted);font-size:12px}.avatars{display:flex}.avatars span{width:31px;height:31px;border-radius:50%;border:2px solid var(--cream);display:grid;place-items:center;margin-left:-7px;background:#4c5a49;color:#fff;font-size:12px}.avatars span:first-child{margin-left:0;background:#e6c5a9}.hero-image{position:relative;min-height:520px;border-radius:28px;overflow:hidden;background:#c9d0c3}.hero-image img{width:100%;height:520px;object-fit:cover;display:block}.image-label{position:absolute;left:20px;bottom:20px;right:20px;background:color-mix(in srgb,var(--white) 94%,transparent);padding:16px 19px;border-radius:17px;display:flex;justify-content:space-between;align-items:center;gap:10px;backdrop-filter:blur(10px)}.image-label strong{display:block;font-size:15px}.image-label small{color:var(--muted)}.round-arrow{background:var(--green);color:#fff;width:39px;height:39px;border-radius:50%;display:grid;place-items:center;font-size:20px;flex-shrink:0}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0;margin-top:8px}.stat{padding:0 24px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{display:block;font-size:29px;letter-spacing:-1px}.stat span{font-size:12px;color:var(--muted)}section{padding:88px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:32px}.section-head h2{font-size:clamp(32px,4vw,47px);line-height:1.08;letter-spacing:-1.5px;margin:0;max-width:620px}.section-head p{color:var(--muted);font-size:14px;max-width:360px;margin:0}.searchbar{display:flex;gap:10px;background:var(--white);padding:10px;border-radius:16px;box-shadow:var(--shadow);margin-bottom:24px}.searchbar input{border:0;outline:0;flex:1;min-width:0;padding:0 12px;background:transparent}.searchbar select{border:0;border-left:1px solid var(--line);padding:0 12px;background:var(--white);color:var(--ink);color:var(--muted);outline:0}.searchbar .btn{border-radius:11px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:0 3px 20px #20231f05;transition:.25s}.project-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.project-photo{height:225px;position:relative;overflow:hidden;background:#d5d9d0}.project-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.project-card:hover img{transform:scale(1.04)}.tag{position:absolute;top:14px;left:14px;background:var(--white);padding:7px 11px;border-radius:999px;font-size:10px;font-weight:800}.project-info{padding:20px}.project-info h3{font-size:20px;margin-bottom:7px}.project-info p{font-size:13px;color:var(--muted);min-height:40px;margin-bottom:18px}.project-meta{display:flex;gap:14px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:12px}.project-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}.price strong{font-size:19px;display:block}.price small{font-size:11px;color:var(--muted)}.text-link{color:var(--green);font-size:13px;font-weight:800}.empty{display:none;padding:25px;text-align:center;color:var(--muted);background:var(--white);border-radius:16px}.about-band{background:var(--green-dark);color:#fff;border-radius:30px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-band h2{font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-1.5px;margin-bottom:18px}.about-band p{color:#ffffffb8;font-size:14px}.about-points{display:grid;grid-template-columns:1fr 1fr;gap:22px}.about-point{border-top:1px solid #ffffff3a;padding-top:16px}.about-point strong{font-size:27px;display:block}.about-point span{font-size:12px;color:#ffffffb8}.feedback{background:#e8ebe3}.form-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}.form-copy h2{font-size:clamp(34px,4vw,48px);line-height:1.08;letter-spacing:-1.6px}.form-copy p{color:var(--muted);max-width:420px}.contact-detail{margin-top:28px;display:grid;gap:12px;font-size:14px}.contact-detail b{display:block}.contact-detail span{color:var(--muted);font-size:12px}.lead-form{background:var(--white);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.field{display:grid;gap:7px;margin-bottom:15px}.field label{font-size:12px;font-weight:750}.field input,.field textarea,.field select{border:1px solid var(--line);background:#fafbf8;border-radius:11px;padding:13px 14px;outline:0;width:100%}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--green)}.field textarea{min-height:95px;resize:vertical}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fineprint{font-size:10px;color:var(--muted);margin:12px 0 0}.form-message{display:none;padding:12px;border-radius:10px;background:#e7f0e2;color:var(--green-dark);font-size:13px;margin-top:12px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:24px;border:1px solid var(--line);border-radius:18px;min-height:205px;background:var(--white)}.step-num{width:38px;height:38px;border-radius:50%;background:#e4e9df;color:var(--green);display:grid;place-items:center;font-weight:850;margin-bottom:25px}.step h3{font-size:17px;margin-bottom:9px}.step p{font-size:12px;color:var(--muted);margin:0}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:190px 190px;gap:14px}.gallery-item{border-radius:18px;overflow:hidden;position:relative;background:#d9ded5}.gallery-item:first-child{grid-row:span 2}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}.gallery-item:hover img{transform:scale(1.04)}.gallery-caption{position:absolute;left:12px;right:12px;bottom:12px;background:color-mix(in srgb,var(--white) 94%,transparent);border-radius:12px;padding:11px 13px;font-size:12px;font-weight:800}.social{background:color-mix(in srgb,var(--green-dark) 55%,var(--cream))}.social-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.social-inner h2{font-size:clamp(30px,4vw,43px);line-height:1.1;letter-spacing:-1.5px;margin-bottom:10px}.social-inner p{color:var(--muted);margin:0}.social-links{display:flex;gap:10px;flex-wrap:wrap}.social-link{padding:14px 18px;border:1px solid #d5d8ce;border-radius:999px;font-size:13px;font-weight:800;transition:.2s}.social-link:hover{background:var(--green);color:#fff;border-color:var(--green)}.map-placeholder{background:var(--white);border-radius:22px;min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}.map-placeholder .pin{font-size:35px}.map-placeholder h3{margin:6px 0}.map-placeholder p{font-size:13px;color:var(--muted);max-width:420px}.contacts-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contacts-grid h2{font-size:42px;letter-spacing:-1.5px;line-height:1.1}.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}.contact-card{background:var(--white);border-radius:16px;padding:19px}.contact-card span{font-size:11px;color:var(--muted);display:block;margin-bottom:8px}.contact-card strong{font-size:14px;overflow-wrap:anywhere}.footer{background:#202b22;color:#fff;padding:35px 0}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:25px;border-bottom:1px solid #ffffff24}.footer .logo{color:#fff}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:#ffffffbd}.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:15px;color:#ffffff82;font-size:11px}.floating{position:fixed;right:20px;bottom:20px;z-index:40;box-shadow:0 8px 24px #20231f30}.search-result-count{font-size:12px;color:var(--muted);margin:0 0 15px}
+
+    /* Contrast fixes for both themes */
+    .hero-note,.project-info p,.section-head p,.form-copy p,.map-placeholder p,
+    .social-inner p,.project-meta,.contact-detail span,.fineprint{color:var(--muted)}
+    .searchbar input{color:var(--ink)}
+    .searchbar input::placeholder,.field input::placeholder,.field textarea::placeholder{color:var(--muted);opacity:1}
+    .field input,.field textarea,.field select{color:var(--ink);background:color-mix(in srgb,var(--white) 78%,var(--cream));border-color:var(--line)}
+    .image-label{color:var(--ink)}
+    .image-label small{color:var(--muted)}
+    .tag,.gallery-caption{color:var(--ink)}
+    .project-card,.step,.lead-form,.contact-card,.empty{color:var(--ink)}
+    .searchbar{border:1px solid var(--line)}
+    .searchbar select{color:var(--ink)}
+    .social-link{color:var(--ink);border-color:var(--line)}
+    .stat{border-color:var(--line)}
+    .topline{background:var(--green-dark);color:#fff}
+    .footer{background:#151815;color:#fff}
+    .theme-toggle{color:var(--ink)}
+    .btn.light{background:var(--white);color:var(--ink);border:1px solid var(--line)}
+    .avatars span{border-color:var(--cream)}
+    body.light-theme .image-label{background:#fffffff0}
+    body.light-theme .tag,body.light-theme .gallery-caption{background:#fffffff0}
+    body:not(.light-theme) .field input,body:not(.light-theme) .field textarea,body:not(.light-theme) .field select{background:#202320;color:#f2f3f0}
+    body:not(.light-theme) .step-num{background:#30392f}
+    body:not(.light-theme) .faq-list details{color:var(--ink)}
+    body:not(.light-theme) .faq-list summary{color:var(--ink)}
+
+
+    /* Readability and subtle interface details */
+    body{font-size:15px}
+    .hero-copy,.section-head p,.form-copy p,.project-info p,.step p,.map-placeholder p{line-height:1.75}
+    .navlinks a,.phone,.footer-links a{transition:color .2s ease}
+    .btn:focus-visible,.theme-toggle:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+    .project-info p{min-height:64px}
+    .project-meta span{display:inline-flex;align-items:center;gap:4px}
+    .section-head{margin-bottom:36px}
+    .project-card{border:1px solid var(--line)}
+    .project-photo:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 65%,#00000012)}
+    .feedback{color:#20231f}
+    body:not(.light-theme) .feedback{background:#292d29;color:#f2f3f0}
+    .faq-list{display:grid;gap:12px;max-width:900px;margin:0 auto}
+    .faq-list details{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:0 20px;transition:border-color .2s,box-shadow .2s}
+    .faq-list details[open]{border-color:var(--green);box-shadow:var(--shadow)}
+    .faq-list summary{cursor:pointer;list-style:none;padding:19px 34px 19px 0;font-weight:750;position:relative}
+    .faq-list summary::-webkit-details-marker{display:none}
+    .faq-list summary:after{content:"＋";position:absolute;right:0;top:16px;color:var(--green);font-size:22px}
+    .faq-list details[open] summary:after{content:"−"}
+    .faq-list details p{color:var(--muted);font-size:14px;line-height:1.75;margin:0;padding:0 0 20px}
+    .faq-intro{color:var(--muted);max-width:600px;margin:-12px 0 28px}
+    .form-message{line-height:1.6}
+
+    @media(max-width:980px){.navlinks{gap:13px}.navlinks a{font-size:12px}.phone{display:none}.hero-grid{gap:28px}.hero-image,.hero-image img{height:450px;min-height:450px}.project-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:720px){.container{width:min(100% - 28px,560px)}.topline .container{justify-content:center}.topline .top-extra{display:none}.nav{height:67px}.logo{font-size:23px}.icon-btn{display:block}.navright>.btn{display:none}.navlinks{display:none;position:absolute;top:67px;left:0;right:0;background:var(--cream);padding:18px 22px 22px;box-shadow:0 15px 20px #20231f10;flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.navlinks a:last-child{border:0}.hero{padding:28px 0 42px}.hero-grid{grid-template-columns:1fr;gap:28px}h1{font-size:45px;letter-spacing:-1.8px}.hero-copy{font-size:15px}.hero-image,.hero-image img{height:360px;min-height:360px}.stats{grid-template-columns:1fr 1fr;row-gap:20px}.stat{padding:0 14px}.stat:nth-child(2){border:0}.stat:nth-child(3){padding-left:0}.stat strong{font-size:25px}section{padding:60px 0}.section-head{display:block}.section-head h2{margin-bottom:14px}.section-head p{font-size:13px}.searchbar{flex-wrap:wrap}.searchbar input{flex-basis:100%;height:42px}.searchbar select{flex:1;border:1px solid var(--line);border-radius:9px;height:43px}.searchbar .btn{height:43px;padding:10px 16px}.project-grid{grid-template-columns:1fr;gap:15px}.project-photo{height:230px}.about-band{padding:28px 22px;grid-template-columns:1fr;gap:28px}.about-points{gap:16px}.form-grid{grid-template-columns:1fr;gap:28px}.lead-form{padding:20px}.form-row{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr;gap:10px}.step{padding:17px;min-height:190px}.step-num{margin-bottom:18px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 160px 160px}.gallery-item:first-child{grid-column:span 2;grid-row:auto}.social-inner{display:block}.social-links{margin-top:22px}.contacts-grid{grid-template-columns:1fr;gap:20px}.contacts-grid h2{font-size:36px}.contact-cards{grid-template-columns:1fr 1fr}.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}.footer-links{gap:12px}.floating{right:12px;bottom:12px;padding:12px 16px}}
+    @media(max-width:390px){h1{font-size:39px}.hero-actions .btn{width:100%}.steps{grid-template-columns:1fr}.contact-cards{grid-template-columns:1fr}.image-label{left:12px;right:12px;bottom:12px}.gallery-grid{grid-template-rows:190px 140px 140px}}
+  </style>
+</head>
+<body class="light-theme">
+  <div class="topline"><div class="container"><span>Проектируем дома под ваш образ жизни</span><span class="top-extra">Консультация по будням · 09:00–18:00</span><a href="#contacts">Связаться с нами ↗</a></div></div>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="FORMA — на главную"><span class="logo-mark">F</span> FORMA</a>
+      <nav class="navlinks" id="navlinks" aria-label="Основная навигация">
+        <a href="#projects">Проекты</a><a href="#about">О нас</a><a href="#work">Как работаем</a><a href="#realized">Наши работы</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="navright"><a class="phone" href="tel:+70000000000">+7 (000) 000-00-00</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Переключить тему" title="Переключить светлую/тёмную тему">☀</button><a class="btn" href="#feedback">Обсудить проект</a><button class="icon-btn" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Дома с характером</div>
+            <h1>Пространство,<br>в котором <em>хочется жить.</em></h1>
+            <p class="hero-copy">Помогаем пройти путь от первой идеи до дома, который подходит именно вам. Продуманные планировки, современная архитектура и внимание к деталям.</p>
+            <div class="hero-actions"><a class="btn" href="#projects">Выбрать проект <span>↗</span></a><a class="btn light" href="#feedback">Получить консультацию</a></div>
+            <div class="hero-note"><div class="avatars"><span>⌂</span><span>✳</span><span>＋</span></div><span>Индивидуальный подход к каждому проекту</span></div>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Современный загородный дом среди зелени">
+            <div class="image-label"><div><strong>Дом начинается с идеи</strong><small>Подберём решение под ваши задачи</small></div><a class="round-arrow" href="#projects" aria-label="К проектам">↘</a></div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>01</strong><span>Персональный подход</span></div>
+          <div class="stat"><strong>360°</strong><span>Внимание к деталям</span></div>
+          <div class="stat"><strong>4 шага</strong><span>От идеи до результата</span></div>
+          <div class="stat"><strong>Ваш стиль</strong><span>Решения под ваш образ жизни</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Каталог решений</div><h2>Найдите проект<br>своего будущего дома</h2></div><p>Изучите примеры, сравните площадь и стоимость. Поиск поможет быстро отфильтровать подходящие варианты.</p></div>
+        <div class="searchbar" role="search">
+          <input id="projectSearch" type="search" placeholder="Поиск по названию или описанию…" aria-label="Поиск проектов">
+          <select id="areaFilter" aria-label="Площадь"><option value="">Любая площадь</option><option value="small">До 60 м²</option><option value="medium">60–100 м²</option><option value="large">Более 100 м²</option></select>
+          <select id="priceFilter" aria-label="Бюджет"><option value="">Любой бюджет</option><option value="low">До 4 млн ₽</option><option value="mid">4–7 млн ₽</option><option value="high">От 7 млн ₽</option></select>
+          <button class="btn" id="searchBtn" type="button">Найти</button>
+        </div>
+        <p class="search-result-count" id="resultCount" aria-live="polite">Подбираем проекты для вас</p>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-name="FL Next 51 модульный дом небольшой семьи" data-area="83" data-price="5740000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1000&q=85" alt="Модульный загородный дом с деревянной отделкой"><span class="tag">Хит продаж</span></div>
+            <div class="project-info"><h3>Модульный дом FL Next 51</h3><p>Идеальное решение для небольшой семьи. Современный и эргономичный дом для круглогодичного проживания.</p><div class="project-meta"><span>⌂ 83 м²</span><span>▧ 9×9 м</span><span>▤ 1–2 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 5 740 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Next 51">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL 65 модульный дом популярный просторный" data-area="98" data-price="6630000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" alt="Современный модульный дом с панорамным остеклением"><span class="tag">Популярный</span></div>
+            <div class="project-info"><h3>Модульный дом FL 65</h3><p>Популярная модель с просторной гостиной и панорамными окнами — для дачи или постоянного проживания.</p><div class="project-meta"><span>⌂ 98 м²</span><span>▧ 12×8 м</span><span>▤ 2–3 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 6 630 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL 65">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Next 77 модульный дом большая семья" data-area="111" data-price="8120000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Современный одноэтажный дом с большой террасой"><span class="tag">Для семьи</span></div>
+            <div class="project-info"><h3>Модульный дом FL Next 77</h3><p>Улучшенная просторная модель с большой общей зоной и местом для семейных встреч.</p><div class="project-meta"><span>⌂ 111 м²</span><span>▧ 12×9 м</span><span>▤ 2–3 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 8 120 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Next 77">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Compact 35 компактный модульный дом дача" data-area="35" data-price="2890000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1000&q=85" alt="Компактный современный дом в окружении деревьев"><span class="tag">Компактный</span></div>
+            <div class="project-info"><h3>Модульный дом FL Compact 35</h3><p>Практичный вариант для загородного отдыха, гостевого дома или небольшого участка.</p><div class="project-meta"><span>⌂ 35 м²</span><span>▧ 6×6 м</span><span>▤ 1 спальня</span></div><div class="project-bottom"><div class="price"><strong>от 2 890 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Compact 35">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Family 90 модульный дом терраса семья" data-area="90" data-price="6890000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Семейный загородный дом с террасой"><span class="tag">С террасой</span></div>
+            <div class="project-info"><h3>Модульный дом FL Family 90</h3><p>Сбалансированная планировка, удобная кухня-гостиная и выход на открытую террасу.</p><div class="project-meta"><span>⌂ 90 м²</span><span>▧ 11×9 м</span><span>▤ 2 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 6 890 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Family 90">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Panorama 120 панорамный модульный дом" data-area="120" data-price="9890000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Современный просторный дом с панорамным остеклением"><span class="tag">Панорамный</span></div>
+            <div class="project-info"><h3>Модульный дом FL Panorama 120</h3><p>Много естественного света, просторная гостиная и архитектура для ценителей современного стиля.</p><div class="project-meta"><span>⌂ 120 м²</span><span>▧ 14×10 м</span><span>▤ 3 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 9 890 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Panorama 120">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Barn 72 барнхаус модульный дом" data-area="72" data-price="6190000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1000&q=85" alt="Дом в стиле барнхаус"><span class="tag">Барнхаус</span></div>
+            <div class="project-info"><h3>Модульный дом FL Barn 72</h3><p>Выразительный силуэт, натуральные фактуры и рациональная планировка для жизни за городом.</p><div class="project-meta"><span>⌂ 72 м²</span><span>▧ 10×8 м</span><span>▤ 2 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 6 190 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Barn 72">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Winter 105 зимний модульный дом" data-area="105" data-price="7890000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=85" alt="Современный дом для загородного проживания"><span class="tag">Для круглого года</span></div>
+            <div class="project-info"><h3>Модульный дом FL Winter 105</h3><p>Просторный дом для постоянного проживания с отдельными комнатами и уютной общей зоной.</p><div class="project-meta"><span>⌂ 105 м²</span><span>▧ 13×9 м</span><span>▤ 3 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 7 890 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Winter 105">Подробнее ↗</a></div></div>
+          </article>
+          <article class="project-card" data-name="FL Terrace 64 модульный дом терраса" data-area="64" data-price="4980000">
+            <div class="project-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1000&q=85" alt="Загородный дом с большой открытой площадкой"><span class="tag">Для отдыха</span></div>
+            <div class="project-info"><h3>Модульный дом FL Terrace 64</h3><p>Уютный формат с просторной верандой — место для летних завтраков и выходных на природе.</p><div class="project-meta"><span>⌂ 64 м²</span><span>▧ 9×8 м</span><span>▤ 1–2 спальни</span></div><div class="project-bottom"><div class="price"><strong>от 4 980 000 ₽</strong><small>ориентировочная цена</small></div><a class="text-link choose-project" href="#feedback" data-project="FL Terrace 64">Подробнее ↗</a></div></div>
+          </article>
+        </div>
+        <div class="empty" id="emptyState">По вашему запросу ничего не найдено. Попробуйте изменить параметры поиска.</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container"><div class="about-band">
+        <div><div class="eyebrow" style="color:#d5e0cc">О подходе FORMA</div><h2>Красивый дом — это не только фасад. Это то, как вам в нём живётся.</h2><p>Мы помогаем сформировать понятное техническое задание, подобрать планировку и продумать детали до начала работ. Здесь можно рассказать о вашей реальной команде, опыте и специализации.</p><a class="btn light" href="#feedback">Обсудить свою задачу ↗</a></div>
+        <div class="about-points"><div class="about-point"><strong>01</strong><span>Сначала узнаём ваши потребности</span></div><div class="about-point"><strong>02</strong><span>Подбираем проект под участок и бюджет</span></div><div class="about-point"><strong>03</strong><span>Объясняем этапы и состав работ</span></div><div class="about-point"><strong>04</strong><span>Остаёмся на связи на каждом этапе</span></div></div>
+      </div></div>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <div class="container form-grid">
+        <div class="form-copy"><div class="eyebrow">Обратная связь</div><h2>Расскажите о доме, который вы представляете</h2><p>Оставьте контакты и кратко опишите задачу. Мы подготовим вопросы для консультации и поможем определить следующие шаги.</p><div class="contact-detail"><div><b>Телефон</b><span>+7 (000) 000-00-00 — замените на свой</span></div><div><b>Электронная почта</b><span>hello@example.com — замените на свою</span></div><div><b>Время связи</b><span>Пн–Пт, 09:00–18:00</span></div></div></div>
+        <form class="lead-form" id="leadForm">
+          <div class="form-row"><div class="field"><label for="name">Ваше имя</label><input id="name" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></div><div class="field"><label for="phoneInput">Телефон или мессенджер</label><input id="phoneInput" name="phone" autocomplete="tel" placeholder="+7 ___ ___-__-__" required></div></div>
+          <div class="field"><label for="interest">Что вас интересует?</label><select id="interest" name="interest"><option>Подобрать проект дома</option><option>Рассчитать стоимость</option><option>Индивидуальный проект</option><option>Другой вопрос</option></select></div>
+          <div class="field"><label for="message">Комментарий</label><textarea id="message" name="message" placeholder="Площадь, участок, пожелания или выбранный проект"></textarea></div>
+          <button class="btn" type="submit" style="width:100%">Подготовить заявку ↗</button>
+          <p class="fineprint">Демо-форма: она проверяет заполнение и открывает подготовленное сообщение в почтовом приложении. Для реального приёма заявок подключите сервер или сервис форм.</p>
+          <div class="form-message" id="formMessage" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">Простой процесс</div><h2>Как мы работаем</h2></div><p>Понятные шаги помогают двигаться от идеи к результату без лишней неопределённости.</p></div>
+        <div class="steps"><article class="step"><div class="step-num">01</div><h3>Знакомство</h3><p>Обсуждаем ваши пожелания, участок, сроки и ориентир по бюджету.</p></article><article class="step"><div class="step-num">02</div><h3>Подбор решения</h3><p>Сравниваем планировки, определяем основные параметры будущего дома.</p></article><article class="step"><div class="step-num">03</div><h3>Расчёт и план</h3><p>Согласовываем состав работ, этапы, материалы и стоимость.</p></article><article class="step"><div class="step-num">04</div><h3>Реализация</h3><p>Двигаемся по согласованному плану и остаёмся на связи.</p></article></div>
+      </div>
+    </section>
+
+    <section id="realized">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">Портфолио</div><h2>Реализованные проекты</h2></div><p>Здесь размещаются реальные объекты, фотографии процесса и короткие истории о задачах клиентов. Сейчас показаны демонстрационные примеры.</p></div>
+        <div class="gallery-grid">
+          <a class="gallery-item" href="#feedback"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80" alt="Современный дом с террасой"><span class="gallery-caption">Дом для загородной жизни ↗</span></a>
+          <a class="gallery-item" href="#feedback"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Светлый интерьер дома"><span class="gallery-caption">Светлый интерьер ↗</span></a>
+          <a class="gallery-item" href="#feedback"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Фасад современного дома"><span class="gallery-caption">Архитектура и фасад ↗</span></a>
+          <a class="gallery-item" href="#feedback"><img loading="lazy" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80" alt="Загородный дом в зелени"><span class="gallery-caption">Дом среди природы ↗</span></a>
+          <a class="gallery-item" href="#feedback"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Уютная гостиная"><span class="gallery-caption">Пространство для семьи ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="social" id="social">
+      <div class="container social-inner"><div><div class="eyebrow">Будьте на связи</div><h2>Подписывайтесь на наши соцсети</h2><p>Публикуем новые проекты, идеи для дома и новости работы.</p></div><div class="social-links"><a class="social-link" href="https://t.me/" target="_blank" rel="noopener">Telegram ↗</a><a class="social-link" href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте ↗</a><a class="social-link" href="https://youtube.com/" target="_blank" rel="noopener">YouTube ↗</a></div></div>
+    </section>
+
+    <section id="map">
+      <div class="container"><div class="section-head"><div><div class="eyebrow">Мы на карте</div><h2>Найдите нас</h2></div><p>В будущем здесь можно разместить интерактивную карту Яндекса с офисом, выставкой или объектами.</p></div><div class="map-placeholder"><div><div class="pin">⌖</div><h3>Карта появится здесь</h3><p>Укажите реальный адрес, затем добавьте карту через конструктор Яндекс Карт и замените этот блок кодом встраивания.</p></div></div></div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Коротко о важном</div><h2>Частые вопросы</h2></div><p>Основные моменты, которые полезно знать перед выбором проекта.</p></div>
+        <div class="faq-list">
+          <details><summary>Можно ли изменить планировку типового проекта?</summary><p>Да, состав помещений и планировку можно обсудить на консультации. Возможность изменений зависит от выбранной модели и конструктивных особенностей.</p></details>
+          <details><summary>Что входит в указанную стоимость?</summary><p>Цены на сайте ориентировочные и приведены для примера. Точный состав комплектации, доставки, фундамента и монтажных работ нужно согласовать перед расчётом.</p></details>
+          <details><summary>Подойдёт ли дом для круглогодичного проживания?</summary><p>Это зависит от выбранной модели, утепления, инженерных систем и условий участка. Сообщите, как планируете использовать дом, — это поможет подобрать подходящее решение.</p></details>
+          <details><summary>Какие данные нужны для первой консультации?</summary><p>Полезно знать примерную площадь, бюджет, регион строительства, особенности участка и количество спален. Если пока ничего не определено, можно начать с идеи и пожеланий.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="container contacts-grid"><div><div class="eyebrow">Контакты</div><h2>Давайте создадим ваш следующий проект</h2><p style="color:var(--muted)">Свяжитесь удобным способом — обсудим задачу и подскажем, с чего начать.</p><a class="btn" href="#feedback">Оставить заявку ↗</a></div><div class="contact-cards"><div class="contact-card"><span>Позвонить</span><strong><a href="tel:+70000000000">+7 (000) 000-00-00</a></strong></div><div class="contact-card"><span>Написать</span><strong><a href="mailto:hello@example.com">hello@example.com</a></strong></div><div class="contact-card"><span>Telegram</span><strong><a href="https://t.me/" target="_blank" rel="noopener">@your_account</a></strong></div><div class="contact-card"><span>Адрес</span><strong>Добавьте ваш адрес</strong></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><a class="logo" href="#home"><span class="logo-mark">F</span> FORMA</a><div class="footer-links"><a href="#projects">Проекты</a><a href="#about">О нас</a><a href="#work">Как работаем</a><a href="#realized">Портфолио</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> FORMA. Демонстрационный шаблон сайта.</span><span>Политика конфиденциальности · Реквизиты добавьте перед публикацией</span></div></div></footer>
+  <a class="btn floating" href="#feedback">Обсудить проект ↗</a>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navlinks = document.getElementById('navlinks');
+    menuToggle.addEventListener('click', () => {
+      const opened = navlinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(opened));
+      menuToggle.textContent = opened ? '✕' : '☰';
+    });
+    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navlinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+
+    const searchInput = document.getElementById('projectSearch');
+    const areaFilter = document.getElementById('areaFilter');
+    const priceFilter = document.getElementById('priceFilter');
+    const cards = [...document.querySelectorAll('.project-card')];
+    const resultCount = document.getElementById('resultCount');
+    const emptyState = document.getElementById('emptyState');
+
+    function filterProjects() {
+      const query = searchInput.value.trim().toLocaleLowerCase('ru');
+      const area = areaFilter.value;
+      const price = priceFilter.value;
+      let shown = 0;
+      cards.forEach(card => {
+        const name = (card.dataset.name + ' ' + card.innerText).toLocaleLowerCase('ru');
+        const sqm = Number(card.dataset.area);
+        const cost = Number(card.dataset.price);
+        const matchesQuery = !query || name.includes(query);
+        const matchesArea = !area || (area === 'small' && sqm < 60) || (area === 'medium' && sqm >= 60 && sqm <= 100) || (area === 'large' && sqm > 100);
+        const matchesPrice = !price || (price === 'low' && cost < 4000000) || (price === 'mid' && cost >= 4000000 && cost <= 7000000) || (price === 'high' && cost > 7000000);
+        const visible = matchesQuery && matchesArea && matchesPrice;
+        card.style.display = visible ? '' : 'none';
+        if (visible) shown++;
+      });
+      resultCount.textContent = `Найдено проектов: ${shown}`;
+      emptyState.style.display = shown ? 'none' : 'block';
+    }
+    document.getElementById('searchBtn').addEventListener('click', filterProjects);
+    searchInput.addEventListener('input', filterProjects);
+    areaFilter.addEventListener('change', filterProjects);
+    priceFilter.addEventListener('change', filterProjects);
+    filterProjects();
+
+    document.querySelectorAll('.choose-project').forEach(link => link.addEventListener('click', () => {
+      const project = link.dataset.project;
+      const interest = document.getElementById('interest');
+      interest.value = 'Подобрать проект дома';
+      const message = document.getElementById('message');
+      message.value = `Меня интересует проект «${project}». Прошу связаться со мной и рассказать подробнее.`;
+    }));
+
+    document.getElementById('leadForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const subject = encodeURIComponent('Заявка с сайта FORMA');
+      const body = encodeURIComponent(
+        `Имя: ${data.get('name')}\nТелефон/мессенджер: ${data.get('phone')}\nИнтерес: ${data.get('interest')}\nКомментарий: ${data.get('message') || 'не указан'}`
+      );
+      const msg = document.getElementById('formMessage');
+      msg.style.display = 'block';
+      msg.textContent = 'Откроется почтовое приложение с подготовленной заявкой. Перед публикацией замените hello@example.com на свою почту.';
+      window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+    });
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      const light = document.body.classList.contains('light-theme');
+      themeToggle.textContent = light ? '☾' : '☀';
+      themeToggle.setAttribute('aria-label', light ? 'Включить тёмную тему' : 'Включить светлую тему');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
